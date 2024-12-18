@@ -1,7 +1,0 @@
-Feature: To test login
-
-  Scenario: UnSuccessfull Login
-     Given: User is on Login Page
-     When: User gives incorrect username and password
-     Then: User will display unsuccessful Login
-
