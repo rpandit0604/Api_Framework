@@ -1,0 +1,15 @@
+package resource;
+import io.restassured.path.json.JsonPath;
+public class jsonpath 
+{
+	public static String parsejson(String response,String expression)
+	{
+			
+		JsonPath js=new JsonPath(response);
+		return js.getString(expression);
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Api_Framework" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumber.Options.TestRunner" time="6.185">
+    <testsuite name="Http method on PlaceApi" time="6.185">
+      <testcase name="Adding a Place" classname="Http method on PlaceApi" time="6.12"/>
+      <testcase name="Update the Address" classname="Http method on PlaceApi" time="0.024"/>
+      <testcase name="Retrieve the PlaceDetails" classname="Http method on PlaceApi" time="0.023"/>
+      <testcase name="Delete the Place" classname="Http method on PlaceApi" time="0.017"/>
+    </testsuite>
+  </testsuite>
+</testrun>

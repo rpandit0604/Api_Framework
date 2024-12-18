@@ -1,0 +1,9 @@
+
+public class URL {
+
+	
+	public static String Post()
+	{
+		return "/maps/api/place/add/json";
+	}
+}

@@ -1,0 +1,20 @@
+Feature: Validating Place Api
+
+Scenario: Verify if Place is being successfully added using AddPlaceAPI
+			Given Add Place Payload
+			When user calls "AddPlaceAPI" with Post http request 
+			Then the Api call is success with status code 200
+			And "status" in response body is "OK"
+			
+			##double quotes " " is like we are making variable 
+			##so that when we want to deleteApi we will not write
+			## again we will just send delete api to this double quote variable
+    #Responsebody
+    # "status": "OK",
+    # "place_id": "03d4cb2abc9f53a4706c73bc15618d67",
+    # "scope": "APP",
+    # "reference": "ada714d3159a7671505571e8a7f203faada714d3159a7671505571e8a7f203fa",
+    # "id": "ada714d3159a7671505571e8a7f203fa"
+
+    
+    

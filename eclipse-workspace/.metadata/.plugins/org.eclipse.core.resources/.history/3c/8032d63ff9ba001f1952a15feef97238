@@ -1,0 +1,16 @@
+Feature: Login Api Testing
+
+  @Smoke
+  Scenario: successful login
+    Given: prepare the login request
+    When: I send the Login request 
+    Then: I should recive 200 as status code
+    And: The response should contain login token
+
+
+  @Negative
+  Scenario: Unsuccessful login
+    Given: prepare the invalid login request
+    When: I send the login request
+    Then: I should receive 401 status code
+

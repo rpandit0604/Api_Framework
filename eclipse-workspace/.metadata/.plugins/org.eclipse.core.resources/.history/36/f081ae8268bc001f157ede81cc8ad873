@@ -1,0 +1,13 @@
+Feature: To test Login page
+
+  Scenario: Successfull Login
+    Given: User is on Login page
+    When: User gives correct username and password
+    Then: User will Login successfully
+    And: User will land on homepage with correct url
+
+
+ # Scenario: UnSuccessfull Login
+  #  Given: User is on Login Page
+   # When: User gives incorrect username and password
+    #Then: User will display unsuccessful Login

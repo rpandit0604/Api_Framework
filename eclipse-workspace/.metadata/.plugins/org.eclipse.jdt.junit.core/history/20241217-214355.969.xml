@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Api_Framework" tests="4" started="1" failures="0" errors="2" ignored="0">
+  <testsuite name="cucumber.Options.TestRunner" time="0.176" incomplete="true">
+    <error>io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'the API call is successful with status code {int2}'.
+It appears you did not register a parameter type.&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:61)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:49)&#13;
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:273)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)&#13;
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)&#13;
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)&#13;
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)&#13;
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 45:
+
+the API call is successful with status code {int2}
+                                            ^----^
+Undefined parameter type 'int2'.
+Please register a ParameterType for 'int2'&#13;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:96)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:54)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)&#13;
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)&#13;
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:111)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:56)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:39)&#13;
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:53)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:88)&#13;
+	... 40 more&#13;
+&#13;
+</error>
+    <testsuite name="Http method on PlaceApi" incomplete="true">
+      <testcase name="Adding a Place" classname="Http method on PlaceApi" time="0.103">
+        <error>io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'the API call is successful with status code {int2}'.
+It appears you did not register a parameter type.&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:61)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:49)&#13;
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:273)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)&#13;
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)&#13;
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)&#13;
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)&#13;
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 45:
+
+the API call is successful with status code {int2}
+                                            ^----^
+Undefined parameter type 'int2'.
+Please register a ParameterType for 'int2'&#13;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:96)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:54)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)&#13;
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)&#13;
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:111)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:56)&#13;
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:39)&#13;
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:53)&#13;
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:88)&#13;
+	... 40 more&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Update the Address" classname="Http method on PlaceApi" incomplete="true"/>
+      <testcase name="Retrieve the PlaceDetails" classname="Http method on PlaceApi" incomplete="true"/>
+      <testcase name="Delete the Place" classname="Http method on PlaceApi" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>
